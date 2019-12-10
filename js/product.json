@@ -1,0 +1,837 @@
+{
+    "Packages": [
+    {
+		"id":"1",
+		"for":"Basic",
+        "PackageName": "Summer Health Screening",
+        "Subtitle": "Basic",
+        "Parameters": [
+        {
+            "ParameterName": "Fasting Plasma Glucose (FPG)",
+            "Tests": [
+            {
+                "TestName": "Fasting Plasma Glucose (FPG)"
+            }]
+        },
+        {
+            "ParameterName": "CBP (Complete Blood Picture) WB EDTA",
+            "Tests": [
+            {
+                "TestName": "Haemoglobin"
+            },
+            {
+                "TestName": "Total RBC Count"
+            },
+            {
+                "TestName": "Packed Cell Volume/Haemotocrit"
+            },
+            {
+                "TestName": "MCV"
+            },
+            {
+                "TestName": "MCH"
+            },
+            {
+                "TestName": "MCHC"
+            },
+            {
+                "TestName": "RDW"
+            },
+            {
+                "TestName": "Total WBC Count"
+            },
+            {
+                "TestName": "Differential Count",
+                "SubTests": [
+                {
+                    "SubTestName": "Neutrophills"
+                },
+                {
+                    "SubTestName": "Lymphocytes"
+                },
+                {
+                    "SubTestName": "Eosinophils"
+                },
+                {
+                    "SubTestName": "Monocytes"
+                },
+                {
+                    "SubTestName": "Basophils"
+                }]
+            },
+            {
+                "TestName": "Absolute Leucocyte Count",
+                "SubTests": [
+                {
+                    "SubTestName": "Absolute Neutrophil count"
+                },
+                {
+                    "SubTestName": "Absolute Lymphocyte count"
+                },
+                {
+                    "SubTestName": "Absolute Eosinophil count"
+                },
+                {
+                    "SubTestName": "Absolute Monocyte count"
+                }]
+            },
+            {
+                "TestName": "Peripheral Smear",
+                "SubTests": [
+                {
+                    "SubTestName": "RBC"
+                },
+                {
+                    "SubTestName": "WBC"
+                },
+                {
+                    "SubTestName": "Platelet count"
+                }]
+            }]
+        },
+        {
+            "ParameterName": "ESR (Erythrocyte Sedimentation Rate)",
+            "Tests": [
+            {
+                "TestName": "ESR (Erythrocyte Sedimentation Rate)"
+            }]
+        },
+        {
+            "ParameterName": "CUE (Complete Urine Examination)",
+            "Tests": [
+            {
+                "TestName": "Colour"
+            },
+            {
+                "TestName": "Appearance"
+            },
+            {
+                "TestName": "Specific Gravity"
+            },
+            {
+                "TestName": "Reaction/PH"
+            },
+            {
+                "TestName": "Protein"
+            },
+            {
+                "TestName": "Glucose"
+            },
+            {
+                "TestName": "Urobilinogen"
+            },
+            {
+                "TestName": "Bilirubin"
+            },
+            {
+                "TestName": "Ketones"
+            },
+            {
+                "TestName": "Nitrites"
+            },
+            {
+                "TestName": "Pus Cells"
+            },
+            {
+                "TestName": "R.B.C"
+            },
+            {
+                "TestName": "Epithelial Cells"
+            },
+            {
+                "TestName": "Casts"
+            },
+            {
+                "TestName": "Crystals"
+            }]
+        },
+        {
+            "ParameterName": "Total Vitamin D",
+            "Tests": [
+            {
+                "TestName": "Total Vitamin D"
+            }]
+        },
+        {
+            "ParameterName": "Lipid Profile",
+            "Tests": [
+            {
+                "TestName": "Triglycerides"
+            },
+            {
+                "TestName": "Total Cholesterol"
+            },
+            {
+                "TestName": "LDL Cholesterol"
+            },
+            {
+                "TestName": "HDL cholesterol"
+            },
+            {
+                "TestName": "VLDL"
+            },
+            {
+                "TestName": "Total cholesterol/HDL cholesterol Ratio"
+            },
+            {
+                "TestName": "LDL cholesterol/HDL cholesterol Ratio"
+            }]
+        },
+        {
+            "ParameterName": "Thyroid Profile",
+            "Tests": [
+            {
+                "TestName": "T3"
+            },
+            {
+                "TestName": "T4"
+            },
+            {
+                "TestName": "TSH"
+            }]
+        },
+        {
+            "ParameterName": "Liver Function Tests",
+            "Tests": [
+            {
+                "TestName": "Total Bilirubin"
+            },
+            {
+                "TestName": "Conjugated Bilirubin"
+            },
+            {
+                "TestName": "Uncojugated Bilirubin"
+            },
+            {
+                "TestName": "SGPT"
+            },
+            {
+                "TestName": "SGOT"
+            },
+            {
+                "TestName": "Alkaline Phosphatase"
+            },
+            {
+                "TestName": "Total Protein"
+            },
+            {
+                "TestName": "Albumin"
+            },
+            {
+                "TestName": "Globulin"
+            },
+            {
+                "TestName": "Albumin/Globulin (A/G) Ratio"
+            },
+            {
+                "TestName": "Gamma-Glutamyl Transferase (GGT)"
+            }]
+        },
+        {
+            "ParameterName": "Kidney Function Tests",
+            "Tests": [
+            {
+                "TestName": "Urea Serum"
+            },
+            {
+                "TestName": "Creatinine Serum"
+            },
+            {
+                "TestName": "Calcium Serum"
+            },
+            {
+                "TestName": "Uric Acid"
+            }]
+        },
+        {
+            "ParameterName": "Serum Electrolytes",
+            "Tests": [
+            {
+                "TestName": "Sodium Serum"
+            },
+            {
+                "TestName": "Potassium Serum"
+            },
+            {
+                "TestName": "Chlorides Serum"
+            }]
+        },
+        {
+            "ParameterName": "Physician Consultation",
+            "Tests": [
+            {
+                "TestName": "Physician Consultation"
+            }]
+        }]
+    },
+    {
+		"id":"2",
+		"for":"Male",
+        "PackageName": "Summer Health Screening",
+        "Subtitle": "Advanced (Men)",
+        "Parameters": [
+        {
+            "ParameterName": "Fasting Plasma Glucose (FPG)",
+            "Tests": [
+            {
+                "TestName": "Fasting Plasma Glucose (FPG)"
+            }]
+        },
+        {
+            "ParameterName": "CBP (Complete Blood Picture) WB EDTA",
+            "Tests": [
+            {
+                "TestName": "Haemoglobin"
+            },
+            {
+                "TestName": "Total RBC Count"
+            },
+            {
+                "TestName": "Packed Cell Volume/Haemotocrit"
+            },
+            {
+                "TestName": "MCV"
+            },
+            {
+                "TestName": "MCH"
+            },
+            {
+                "TestName": "MCHC"
+            },
+            {
+                "TestName": "RDW"
+            },
+            {
+                "TestName": "Total WBC Count"
+            },
+            {
+                "TestName": "Differential Count",
+                "SubTests": [
+                {
+                    "SubTestName": "Neutrophills"
+                },
+                {
+                    "SubTestName": "Lymphocytes"
+                },
+                {
+                    "SubTestName": "Eosinophils"
+                },
+                {
+                    "SubTestName": "Monocytes"
+                },
+                {
+                    "SubTestName": "Basophils"
+                }]
+            },
+            {
+                "TestName": "Absolute Leucocyte Count",
+                "SubTests": [
+                {
+                    "SubTestName": "Absolute Neutrophil count"
+                },
+                {
+                    "SubTestName": "Absolute Lymphocyte count"
+                },
+                {
+                    "SubTestName": "Absolute Eosinophil count"
+                },
+                {
+                    "SubTestName": "Absolute Monocyte count"
+                }]
+            },
+            {
+                "TestName": "Peripheral Smear",
+                "SubTests": [
+                {
+                    "SubTestName": "RBC"
+                },
+                {
+                    "SubTestName": "WBC"
+                },
+                {
+                    "SubTestName": "Platelet count"
+                }]
+            }]
+        },
+        {
+            "ParameterName": "ESR (Erythrocyte Sedimentation Rate)",
+            "Tests": [
+            {
+                "TestName": "ESR (Erythrocyte Sedimentation Rate)"
+            }]
+        },
+        {
+            "ParameterName": "CUE (Complete Urine Examination)",
+            "Tests": [
+            {
+                "TestName": "Colour"
+            },
+            {
+                "TestName": "Appearance"
+            },
+            {
+                "TestName": "Specific Gravity"
+            },
+            {
+                "TestName": "Reaction/PH"
+            },
+            {
+                "TestName": "Protein"
+            },
+            {
+                "TestName": "Glucose"
+            },
+            {
+                "TestName": "Urobilinogen"
+            },
+            {
+                "TestName": "Bilirubin"
+            },
+            {
+                "TestName": "Ketones"
+            },
+            {
+                "TestName": "Nitrites"
+            },
+            {
+                "TestName": "Pus Cells"
+            },
+            {
+                "TestName": "R.B.C"
+            },
+            {
+                "TestName": "Epithelial Cells"
+            },
+            {
+                "TestName": "Casts"
+            },
+            {
+                "TestName": "Crystals"
+            }]
+        },
+        {
+            "ParameterName": "Total Vitamin D",
+            "Tests": [
+            {
+                "TestName": "Total Vitamin D"
+            }]
+        },
+        {
+            "ParameterName": "Lipid Profile",
+            "Tests": [
+            {
+                "TestName": "Triglycerides"
+            },
+            {
+                "TestName": "Total Cholesterol"
+            },
+            {
+                "TestName": "LDL Cholesterol"
+            },
+            {
+                "TestName": "HDL cholesterol"
+            },
+            {
+                "TestName": "VLDL"
+            },
+            {
+                "TestName": "Total cholesterol/HDL cholesterol Ratio"
+            },
+            {
+                "TestName": "LDL cholesterol/HDL cholesterol Ratio"
+            }]
+        },
+        {
+            "ParameterName": "Thyroid Profile",
+            "Tests": [
+            {
+                "TestName": "T3"
+            },
+            {
+                "TestName": "T4"
+            },
+            {
+                "TestName": "TSH"
+            }]
+        },
+        {
+            "ParameterName": "Liver Function Tests",
+            "Tests": [
+            {
+                "TestName": "Total Bilirubin"
+            },
+            {
+                "TestName": "Conjugated Bilirubin"
+            },
+            {
+                "TestName": "Uncojugated Bilirubin"
+            },
+            {
+                "TestName": "SGPT"
+            },
+            {
+                "TestName": "SGOT"
+            },
+            {
+                "TestName": "Alkaline Phosphatase"
+            },
+            {
+                "TestName": "Total Protein"
+            },
+            {
+                "TestName": "Albumin"
+            },
+            {
+                "TestName": "Globulin"
+            },
+            {
+                "TestName": "Albumin/Globulin (A/G) Ratio"
+            },
+            {
+                "TestName": "Gamma-Glutamyl Transferase (GGT)"
+            }]
+        },
+        {
+            "ParameterName": "Kidney Function Tests",
+            "Tests": [
+            {
+                "TestName": "Urea Serum"
+            },
+            {
+                "TestName": "Creatinine Serum"
+            },
+            {
+                "TestName": "Calcium Serum"
+            },
+            {
+                "TestName": "Uric Acid"
+            }]
+        },
+        {
+            "ParameterName": "Serum Electrolytes",
+            "Tests": [
+            {
+                "TestName": "Sodium Serum"
+            },
+            {
+                "TestName": "Potassium Serum"
+            },
+            {
+                "TestName": "Chlorides Serum"
+            }]
+        },
+        {
+            "ParameterName": "PSA (Prostate Specific Antigen)",
+            "Tests": [
+            {
+                "TestName": "PSA (Prostate Specific Antigen)"
+            }]
+        },
+        {
+            "ParameterName": "Vitamin - B12 Serum",
+            "Tests": [
+            {
+                "TestName": "Vitamin - B12 Serum"
+            }]
+        },
+        {
+            "ParameterName": "Rheumatoid Factor (RA) Serum",
+            "Tests": [
+            {
+                "TestName": "Rheumatoid Factor (RA) Serum"
+            }]
+        },
+        {
+            "ParameterName": "Physician Consultation",
+            "Tests": [
+            {
+                "TestName": "Physician Consultation"
+            }]
+        }]
+    },
+    {
+		"id":"3",
+		"for":"Female",
+        "PackageName": "Summer Health Screening",
+        "Subtitle": "Advanced (Women)",
+        "Parameters": [
+        {
+            "ParameterName": "Fasting Plasma Glucose (FPG)",
+            "Tests": [
+            {
+                "TestName": "Fasting Plasma Glucose (FPG)"
+            }]
+        },
+        {
+            "ParameterName": "CBP (Complete Blood Picture) WB EDTA",
+            "Tests": [
+            {
+                "TestName": "Haemoglobin"
+            },
+            {
+                "TestName": "Total RBC Count"
+            },
+            {
+                "TestName": "Packed Cell Volume/Haemotocrit"
+            },
+            {
+                "TestName": "MCV"
+            },
+            {
+                "TestName": "MCH"
+            },
+            {
+                "TestName": "MCHC"
+            },
+            {
+                "TestName": "RDW"
+            },
+            {
+                "TestName": "Total WBC Count"
+            },
+            {
+                "TestName": "Differential Count",
+                "SubTests": [
+                {
+                    "SubTestName": "Neutrophills"
+                },
+                {
+                    "SubTestName": "Lymphocytes"
+                },
+                {
+                    "SubTestName": "Eosinophils"
+                },
+                {
+                    "SubTestName": "Monocytes"
+                },
+                {
+                    "SubTestName": "Basophils"
+                }]
+            },
+            {
+                "TestName": "Absolute Leucocyte Count",
+                "SubTests": [
+                {
+                    "SubTestName": "Absolute Neutrophil count"
+                },
+                {
+                    "SubTestName": "Absolute Lymphocyte count"
+                },
+                {
+                    "SubTestName": "Absolute Eosinophil count"
+                },
+                {
+                    "SubTestName": "Absolute Monocyte count"
+                }]
+            },
+            {
+                "TestName": "Peripheral Smear",
+                "SubTests": [
+                {
+                    "SubTestName": "RBC"
+                },
+                {
+                    "SubTestName": "WBC"
+                },
+                {
+                    "SubTestName": "Platelet count"
+                }]
+            }]
+        },
+        {
+            "ParameterName": "ESR (Erythrocyte Sedimentation Rate)",
+            "Tests": [
+            {
+                "TestName": "ESR (Erythrocyte Sedimentation Rate)"
+            }]
+        },
+        {
+            "ParameterName": "CUE (Complete Urine Examination)",
+            "Tests": [
+            {
+                "TestName": "Colour"
+            },
+            {
+                "TestName": "Appearance"
+            },
+            {
+                "TestName": "Specific Gravity"
+            },
+            {
+                "TestName": "Reaction/PH"
+            },
+            {
+                "TestName": "Protein"
+            },
+            {
+                "TestName": "Glucose"
+            },
+            {
+                "TestName": "Urobilinogen"
+            },
+            {
+                "TestName": "Bilirubin"
+            },
+            {
+                "TestName": "Ketones"
+            },
+            {
+                "TestName": "Nitrites"
+            },
+            {
+                "TestName": "Pus Cells"
+            },
+            {
+                "TestName": "R.B.C"
+            },
+            {
+                "TestName": "Epithelial Cells"
+            },
+            {
+                "TestName": "Casts"
+            },
+            {
+                "TestName": "Crystals"
+            }]
+        },
+        {
+            "ParameterName": "Total Vitamin D",
+            "Tests": [
+            {
+                "TestName": "Total Vitamin D"
+            }]
+        },
+        {
+            "ParameterName": "Lipid Profile",
+            "Tests": [
+            {
+                "TestName": "Triglycerides"
+            },
+            {
+                "TestName": "Total Cholesterol"
+            },
+            {
+                "TestName": "LDL Cholesterol"
+            },
+            {
+                "TestName": "HDL cholesterol"
+            },
+            {
+                "TestName": "VLDL"
+            },
+            {
+                "TestName": "Total cholesterol/HDL cholesterol Ratio"
+            },
+            {
+                "TestName": "LDL cholesterol/HDL cholesterol Ratio"
+            }]
+        },
+        {
+            "ParameterName": "Thyroid Profile",
+            "Tests": [
+            {
+                "TestName": "T3"
+            },
+            {
+                "TestName": "T4"
+            },
+            {
+                "TestName": "TSH"
+            }]
+        },
+        {
+            "ParameterName": "Liver Function Tests",
+            "Tests": [
+            {
+                "TestName": "Total Bilirubin"
+            },
+            {
+                "TestName": "Conjugated Bilirubin"
+            },
+            {
+                "TestName": "Uncojugated Bilirubin"
+            },
+            {
+                "TestName": "SGPT"
+            },
+            {
+                "TestName": "SGOT"
+            },
+            {
+                "TestName": "Alkaline Phosphatase"
+            },
+            {
+                "TestName": "Total Protein"
+            },
+            {
+                "TestName": "Albumin"
+            },
+            {
+                "TestName": "Globulin"
+            },
+            {
+                "TestName": "Albumin/Globulin (A/G) Ratio"
+            },
+            {
+                "TestName": "Gamma-Glutamyl Transferase (GGT)"
+            }]
+        },
+        {
+            "ParameterName": "Kidney Function Tests",
+            "Tests": [
+            {
+                "TestName": "Urea Serum"
+            },
+            {
+                "TestName": "Creatinine Serum"
+            },
+            {
+                "TestName": "Calcium Serum"
+            },
+            {
+                "TestName": "Uric Acid"
+            }]
+        },
+        {
+            "ParameterName": "Serum Electrolytes",
+            "Tests": [
+            {
+                "TestName": "Sodium Serum"
+            },
+            {
+                "TestName": "Potassium Serum"
+            },
+            {
+                "TestName": "Chlorides Serum"
+            }]
+        },
+        {
+            "ParameterName": "Paps Smear For Cytology",
+            "Tests": [
+            {
+                "TestName": "Paps Smear For Cytology"
+            }]
+        },
+        {
+            "ParameterName": "Vitamin - B12 Serum",
+            "Tests": [
+            {
+                "TestName": "Vitamin - B12 Serum"
+            }]
+        },
+        {
+            "ParameterName": "Rheumatoid Factor (RA) Serum",
+            "Tests": [
+            {
+                "TestName": "Rheumatoid Factor (RA) Serum"
+            }]
+        },
+        {
+            "ParameterName": "Physician Consultation",
+            "Tests": [
+            {
+                "TestName": "Physician Consultation"
+            }]
+        }]
+    }]
+}

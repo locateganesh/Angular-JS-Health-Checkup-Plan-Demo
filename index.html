@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<!--[if lte IE 9]> <html lang="en-US" class="ie"> <![endif]--> 
+<html lang="en-US" ng-app="vji">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular Js Demo Health Checkup plans</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- css --->
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<!-- css -->
+	<!-- js -->
+	<!--[if gt IE 9]><!--> 
+	<script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<!--<![endif]-->
+    <!--- js -->
+</head>
+<body class="{{pageClass}}" ng-controller="global" ng-init="load()" ng-class="{'winload': docLoad}">
+	<!-- CONTENT -->
+    <div class="tabHeader"><!-- set-height-->
+       <section class="container">
+        <h1 class="headline">Don’t let the rains stop your fun</h1>
+        <h2 class="subhead">Get tested with our comprehensive monsoon health packages.</h2>
+        <button class="btn btn-red">Enquire Now</button>
+       </section>
+    </div>
+    <main>
+        <section class="container allTabs">
+            <ul class="packageList">
+                <li class="pkList pkList01">
+                    <a href="" ng-click="showPkg1()"><span class="pkCounter">PACKAGE 01</span> <span class="pdtFor">Basic</span></a>
+                </li>
+                <li class="pkList pkList02">
+                    <a href="" ng-click="showPkg2()"><span class="pkCounter">PACKAGE 02</span> <i>For</i> <span class="pdtFor">Male</span></a>
+                </li>
+                <li class="pkList pkList03">
+                    <a href="" ng-click="showPkg3()"><span class="pkCounter">PACKAGE 03</span> <i>For</i> <span class="pdtFor">Female</span></a>
+                </li>
+            </ul>
+            <section class="planbgParent">
+                <div class="planbg plans">
+                   
+                    <div class="pkList pkList01">
+                        <a href="" class="xslist" ng-click="mshowPkg($event, 1)" id="1"><span class="pkCounter">PACKAGE 01</span> <span class="pdtFor">Basic</span></a>
+                    </div>
+                    <div class="router router1">
+                        <article class="textDetails">
+                            <section class="mainDat">
+                            <div class="flexx flex-sb aic md-flex-col">
+                             <div class="flex1 flexx flex-sb md-w100"><h2 class="pckTitle"><span>{{pck1.PackageName}}</span> - {{pck1.Subtitle}}</h2> <div class="inline prevPrice">was ₹5,300</div></div>
+                             <div class="flexx aic md-jcsb">
+                                <div class="inline nowPrice">Now <span>₹2,999</span></div>
+                                <button class="btn btn-red" ng-click="formVisble();">Buy Now</button> 
+                             </div>
+                             <div>
+                             </div>
+                            </div>
+                            <section class="para">
+                                <p>The most basic health check suitable for people in the age group of 30-40 years, this health check includes 66 critical parameters which should be checked on an annual basis. The health check includes following tests - Blood Sugar, CBC, Urine Examination, Vitamin D, Lipid Profile, Thyroid Profile, Liver function, Kidney function &amp; Serum Electrolytes. With an NABL accredited lab &amp; 40 years of experience in delivering quality diagnostic care to over 1 crore customers, you can be assured about the accuracy of reports.</p>
+                            </section>
+                            <div class="param">
+                                <h4>Parameters <span>(<span ng-show="pck1.Parameters.length < 10">0</span>{{pck1.Parameters.length}})</span></h4>
+                                <div class="clearfix">
+                                    <ul class="pkgUl">
+                                        <li ng-repeat="pkList in pck1.Parameters | limitTo:quantity">
+                                            <h5>{{pkList.ParameterName}}</h5>
+                                            <span class="testCount testClick" pop-event><span ng-show="pkList.Tests.length < 10">0</span>{{pkList.Tests.length}}  Test</span>
+                                            <div class="testsPop">
+                                                <div class="closePop" pop-close></div>   
+                                                <div class="popTitle"><h5>{{pkList.ParameterName}}</h5><span class="testCount"><span ng-show="pkList.Tests.length < 10">0</span>{{pkList.Tests.length}}&nbsp;Test</span></div>
+                                                <ul class="allTest">
+                                                    <li ng-repeat="tests in pkList.Tests"> 
+                                                        <div><span class="subTnum"><span ng-show="$index < 9">0</span>{{$index+1}}.</span>{{tests.TestName}}</div>
+                                                        <div class="subtest" ng-show="tests.SubTests">(<span ng-repeat="subTst in tests.SubTests">{{subTst.SubTestName}}<i ng-show="!$last">, </i></span>)</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </section>
+                            <button class="show-all" ng-click="toggleBtn = !toggleBtn">{{toggleText}}</button>
+                        </article>
+                    </div>
+                    
+                    <div class="pkList pkList02">
+                        <a href="" class="xslist" ng-click="mshowPkg($event, 2)" id="2"><span class="pkCounter">PACKAGE 02</span> <i>For</i> <span class="pdtFor">Male</span></a>
+                    </div>
+                    
+                    <div class="router router2">
+                        <article class="textDetails">
+                            <section class="mainDat">
+                            <div class="flexx flex-sb aic md-flex-col">
+                                <div class="flex1 flexx flex-sb md-w100"><h2 class="pckTitle flex1"><span>{{pck1.PackageName}}</span> - {{pck1.Subtitle}}</h2><div class="inline prevPrice">was ₹7,600</div></div>
+                             <div class="flexx aic md-jcsb">
+                                 <div class="inline nowPrice">Now <span>₹3,999</span></div>
+                                <button class="btn btn-red" ng-click="formVisble();">Buy Now</button>
+                             </div>
+                             <div>
+                             </div>
+                            </div>
+                            <section class="para">
+                                <p>A comprehensive health check for men above the age of 40 years, this health check includes 69 crucial parameters to be checked once a year. Advanced Monsoon Health Screening for Men includes the following tests - Blood Sugar, CBC, Urine Examination, Vitamin D, Vitamin B12, Lipid Profile, Thyroid Profile, Liver function, Kidney function, Serum Electrolytes, Cancer Screening (PSA) &amp; Rheumatoid factor. With an NABL accredited lab &amp; 40 years of experience in delivering quality diagnostic care to over 1 crore customers, you can be assured about the accuracy of reports.</p>
+                            </section>
+                            <div class="param">
+                                <h4>Parameters <span>(<span ng-show="pck2.Parameters.length < 10">0</span>{{pck2.Parameters.length}})</span></h4>
+                                <div class="clearfix">
+                                    <ul class="pkgUl">
+                                        <li ng-repeat="pkList in pck2.Parameters | limitTo:quantity">
+                                            <h5>{{pkList.ParameterName}}</h5>
+                                            <span class="testCount testClick" pop-event><span ng-show="pkList.Tests.length < 10">0</span>{{pkList.Tests.length}}Test</span>
+                                            <div class="testsPop">
+                                                <div class="closePop" pop-close></div>   
+                                                <div class="popTitle"><h5>{{pkList.ParameterName}}</h5><span class="testCount"><span ng-show="pkList.Tests.length < 10">0</span>{{pkList.Tests.length}}&nbsp;Test</span></div>
+                                                <ul class="allTest">
+                                                    <li ng-repeat="tests in pkList.Tests"> 
+                                                        <div><span class="subTnum"><span ng-show="$index < 9">0</span>{{$index+1}}.</span>{{tests.TestName}}</div>
+                                                        <div class="subtest" ng-show="tests.SubTests">(<span ng-repeat="subTst in tests.SubTests">{{subTst.SubTestName}}<i ng-show="!$last">, </i></span>)</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </section>
+                            <button class="show-all" ng-click="toggleBtn = !toggleBtn">{{toggleText}}</button>
+                        </article>
+                    </div>
+                    
+                    <div class="pkList pkList03">
+                        <a href="" class="xslist" ng-click="mshowPkg($event, 3)" id="3"><span class="pkCounter">PACKAGE 03</span> <i>For</i> <span class="pdtFor">Female</span></a>
+                    </div>
+                    
+                    <div class="router router3">
+                        <article class="textDetails">
+                            <section class="mainDat">
+                            <div class="flexx flex-sb aic md-flex-col">
+                                <div class="flex1 flexx flex-sb md-w100"><h2 class="pckTitle flex1"><span>{{pck3.PackageName}}</span> - {{pck3.Subtitle}}</h2><div class="inline prevPrice">was ₹5,300</div></div>
+                             <div class="flexx aic md-jcsb">
+                                <div class="inline nowPrice">Now <span>₹2,999</span></div>
+                                <button class="btn btn-red" ng-click="formVisble();">Buy Now</button>
+                             </div>
+                             <div>
+                             </div>
+                            </div>
+                            <section class="para">
+                                <p>A comprehensive health check for women above the age of 40 years, this health check includes 69 crucial parameters to be checked once every year. Advanced Monsoon Health Screening for Women includes the following tests - Blood Sugar, CBC, Urine Examination, Vitamin D, Vitamin B12, Lipid Profile, Thyroid Profile, Liver function, Kidney function, Serum Electrolytes, Cancer Screening (PAP Smear) &amp; Rheumatoid factor. With an NABL accredited lab &amp; 40 years of experience in delivering quality diagnostic care to over 1 crore customers, you can be assured about the accuracy of reports.</p>
+                            </section>
+                            <div class="param">
+                                <h4>Parameters <span>(<span ng-show="pck3.Parameters.length < 10">0</span>{{pck3.Parameters.length}})</span></h4>
+                                <div class="clearfix">
+                                    <ul class="pkgUl">
+                                        <li ng-repeat="pkList in pck3.Parameters | limitTo:quantity">
+                                            <h5>{{pkList.ParameterName}}</h5>
+                                            <span class="testCount testClick" pop-event><span ng-show="pkList.Tests.length < 10">0</span>{{pkList.Tests.length}} Test</span>
+                                            <div class="testsPop">
+                                                <div class="closePop" pop-close></div>   
+                                                <div class="popTitle"><h5>{{pkList.ParameterName}}</h5><span class="testCount"><span ng-show="pkList.Tests.length < 10">0</span>{{pkList.Tests.length}}&nbsp;Test</span></div>
+                                                <ul class="allTest">
+                                                    <li ng-repeat="tests in pkList.Tests"> 
+                                                        <div><span class="subTnum"><span ng-show="$index < 9">0</span>{{$index+1}}.</span>{{tests.TestName}}</div>
+                                                        <div class="subtest" ng-show="tests.SubTests">(<span ng-repeat="subTst in tests.SubTests">{{subTst.SubTestName}}<i ng-show="!$last">, </i></span>)</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </section>
+                            <button class="show-all" ng-click="toggleBtn = !toggleBtn">{{toggleText}}</button>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    
+    <div id="overlay" class="popOverlay" ng-class="{'formShow': fsEvent}"></div>
+    <div class="popForm flexx" ng-class="{'formShow': fsEvent, 'formAnim2': fsSub1}">
+       <div class="popInner">
+        <section class="formRelated">
+        <h3>Buy Monsoon Health Screening Package </h3>
+        <p>Please enter the following details</p>
+        <form name="buyForm" ng-submit="buyForm.$valid && formSubmit()" novalidate>
+          <div class="form-helf flexx">
+          
+           <label class="form-group" ng-class="{'focused': onFocus0, 'gValid':  buyForm.$submitted || buyForm.firstName.$touched}">
+            <span class="label" ng-class="{'invalid': buyForm.firstName.$error.required}">First Name <i>*</i></span>
+            <input type="text" class="input" name="firstName" ng-model="firstName" ng-focus="onFocus0 = true" ng-blur="onFocus0 = false" required autocomplete="off">
+           </label>
+           
+           <label class="form-group" ng-class="{'focused': onFocus1}">
+            <span class="label">Last Name</span>
+            <input type="text" class="input" name="" id="" ng-focus="onFocus1 = true" ng-blur="onFocus1 = false" autocomplete="off">
+           </label>
+           
+           <label class="form-group" ng-class="{'focused': onFocus2, 'gValid':  buyForm.$submitted || buyForm.age.$touched}">
+            <span class="label" ng-class="{'invalid': buyForm.age.$error.required}">Age <i>*</i></span>
+            <input type="number" class="input" name="age" ng-model="age" id="" ng-focus="onFocus2 = true" ng-blur="onFocus2 = false" required autocomplete="off">
+           </label>
+           
+           <label class="form-group" ng-class="{'focused': onFocus3}">
+            <span class="label">Gender</span>
+            <select name="" id="" class="input" ng-focus="onFocus3 = true" ng-blur="onFocus3 = false">
+                <option value="1" ng-selected="gender1">Male</option>
+                <option value="2" ng-selected="gender2">Female</option>
+            </select>
+           </label>
+           
+           <label class="form-group" ng-class="{'focused': onFocus4, 'gValid':  buyForm.$submitted || buyForm.mobileNumber.$touched}">
+            <span class="label" ng-class="{'invalid': buyForm.mobileNumber.$error.required}">Mobile Number <i>*</i></span>
+            <input type="tel" class="input" name="mobileNumber" ng-model="mobileNumber" id="" ng-focus="onFocus4 = true" ng-blur="onFocus4 = false" required autocomplete="off">
+           </label>
+           
+           <label class="form-group" ng-class="{'focused': onFocus5, 'gValid':  buyForm.$submitted || buyForm.location.$touched}">
+            <span class="label" ng-class="{'invalid': buyForm.location.$error.required}">Preferred Centre <i>*</i></span>
+            <select name="location" ng-model="location" class="input" ng-focus="onFocus5 = true" ng-blur="onFocus5 = false" required>
+                <option value=""></option>
+                <option value="1">Mumbai</option>
+                <option value="2">Delhi</option>
+                <option value="3">Chennai</option>
+                <option value="4">Kolkata</option>
+                <option value="5">Banglore</option>
+                <option value="6">Pune</option>
+            </select>
+           </label>
+           
+          </div>
+          <label class="form-group" ng-class="{'focused': onFocus6}">
+            <span class="label">Package Name <i>*</i></span>
+            <select name="" id="" class="input" ng-focus="onFocus6 = true" ng-blur="onFocus6 = false" required>
+                <option value="1" ng-selected="opSelected1">Monsoon Health Screening Basic</option>
+                <option value="2" ng-selected="opSelected2">Summer Health Screening - Advanced (Men)</option>
+                <option value="3" ng-selected="opSelected3">Summer Health Screening - Advanced (Women)</option>
+            </select>
+           </label>
+           <div class="tac">
+               <button type="submit" class="btn btn-red">Proceed to Payment</button>
+           </div>
+        </form>
+        <a href="" ng-click="fsEvent = false;" class="closePop"></a>
+        </section>
+        <div class="thankYou">Thank you, We'll get back to you soon.</div>
+       </div>
+    </div>
+    
+	<!-- CONTENT -->
+	<!--[if lte IE 9]>
+        <div class="ie8Center"><p class="browserupgrade">You are using an <strong>outdated</strong> browser. <br/>Please <a href="//browsehappy.com/">upgrade your browser</a> to <br/>improve your experience.</p></div> 
+		<style type="text/css">.xcenter{display:none;}</style>
+    <![endif]--> 
+</body>
+</html>

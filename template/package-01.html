@@ -1,0 +1,38 @@
+<article class="textDetails">
+<section class="mainDat">
+<div class="flexx flex-sb aic md-flex-col">
+ <div class="flex1 flexx flex-sb md-w100"><h2 class="pckTitle"><span>{{pck.PackageName}}</span> - {{pck.Subtitle}}</h2> <div class="inline prevPrice">was ₹5,300</div></div>
+ <div class="flexx aic md-jcsb">
+    <div class="inline nowPrice">Now <span>₹2,999</span></div>
+    <button class="btn btn-red" ng-click="formVisble();">Buy Now</button> 
+ </div>
+ <div>
+ </div>
+</div>
+<section class="para">
+    <p>The most basic health check suitable for people in the age group of 30-40 years, this health check includes 66 critical parameters which should be checked on an annual basis. The health check includes following tests - Blood Sugar, CBC, Urine Examination, Vitamin D, Lipid Profile, Thyroid Profile, Liver function, Kidney function &amp; Serum Electrolytes. With an NABL accredited lab &amp; 40 years of experience in delivering quality diagnostic care to over 1 crore customers, you can be assured about the accuracy of reports.</p>
+</section>
+<div class="param">
+    <h4>Parameters <span>(<span ng-show="pck.Parameters.length < 10">0</span>{{pck.Parameters.length}})</span></h4>
+    <div class="clearfix">
+        <ul class="pkgUl">
+            <li ng-repeat="pkList in pck.Parameters | limitTo:quantity">
+                <h5>{{pkList.ParameterName}}</h5>
+                <span class="testCount testClick" pop-event><span ng-show="pkList.Tests.length < 10">0</span>{{pkList.Tests.length}} Test</span>
+                <div class="testsPop">
+                    <div class="closePop" pop-close></div>   
+                    <div class="popTitle"><h5>{{pkList.ParameterName}}</h5><span class="testCount"><span ng-show="pkList.Tests.length < 10">0</span>{{pkList.Tests.length}}&nbsp;Test</span></div>
+                    <ul class="allTest">
+                        <li ng-repeat="tests in pkList.Tests"> 
+                            <div><span class="subTnum"><span ng-show="$index < 9">0</span>{{$index+1}}.</span>{{tests.TestName}}</div>
+                            <div class="subtest" ng-show="tests.SubTests">(<span ng-repeat="subTst in tests.SubTests">{{subTst.SubTestName}}<i ng-show="!$last">, </i></span>)</div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</section>
+<button class="show-all" ng-click="toggleBtn = !toggleBtn">{{toggleText}}</button>
+</article>
